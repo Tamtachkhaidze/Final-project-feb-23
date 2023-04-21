@@ -1,0 +1,813 @@
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+.s-1,.s-4 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3%;
+
+}
+/* start header, styles  and burger bar */
+header {
+  width: 100%;
+  height: 155px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.25);
+
+
+}
+.navbar-header {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 0px 10px 0px;
+  border-bottom:  1.5px solid rgba(0,0,0,0.4);
+ 
+}
+
+.navbar-header a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.7);
+  font-size: 16px;
+  padding: 0px 20px 0px 0px;
+}
+
+.navbar {
+  width: 70%;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+ 
+
+}
+
+.logo {
+  width: 30%;
+}
+
+.menuIcon {
+  display: none;
+  
+}
+.myMenu {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+ 
+}
+
+.myMenu ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.active1 {
+  border-bottom: 2px solid orange;
+
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  
+}
+
+
+.passive::after {
+  content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: orange;
+    transition: width .2s;
+    margin-top: 5px;
+
+}
+
+
+.passive:hover::after {
+  width: 100%;
+  transition: width 0.5s;
+}
+
+/* finished header  styles*/
+
+
+ h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  
+ }
+
+.carousel-item {
+  height: auto;
+  background: no-repeat scroll center scroll; 
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.carousel-item img {
+  height: 800px;
+  background-position:center center;
+  background-size: contain;
+  width:100%;
+ 
+}
+
+.carousel-item ::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+
+}
+
+.slider-btn {
+  width: 100%;
+}
+
+.carousel-caption {
+  height: 10%;
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  top: 48%;
+  left: 18%;
+  
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35%;
+  width: 50%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-right: 15%;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #c4c4c4;
+  border-right: 2px solid gray;
+}
+.tab button:last-child{
+ border-right: 0;
+}
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.tabcontent1 {
+  display: block;
+  align-items: baseline;
+}
+.btn {
+  position: relative;
+  padding: 9px 16px;
+  font-size: 14px;
+  line-height: 28px;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-width: 2px;
+  transition: .3s;
+  backface-visibility: hidden;
+  margin-left: 10px;
+  
+}
+.btn-warning {
+  color: #fff!important;
+  font-weight: 700;
+  background-color: #ffa200;
+  border-color: #ffa200;
+
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212121;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control {
+  -webkit-appearance: none;
+  height: 50px;
+  line-height: 28px;
+}
+
+.carousel-caption h5 {
+ 
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  padding-bottom: 50px;
+  
+}
+
+.carousel-caption h5:hover {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  cursor: pointer;
+
+}
+
+.form-control {
+  width: 30%;
+display: inline;
+align-items: baseline;
+
+}
+
+
+/*inished First section*/
+/*start Second section */
+
+.section1 {
+  width: 100%;
+  height: auto;
+
+}
+
+.box {
+  width: 100%;
+  padding: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: auto;
+  
+}
+
+.text-poto {
+  position: relative;
+  height: 230px;
+  width: 22%;
+  overflow: hidden;
+}
+.text-poto:hover {
+  cursor: pointer;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  border-radius: 7px;
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: transparent; 
+  bottom: 30%;
+  transition: 0.5s  ease-in-out;
+  border: none;
+}
+
+.text-poto h3 {
+  position: absolute;
+  padding-bottom: 10px;
+  left: 28%;
+  margin-top: 10%;
+  color: #ffff;
+  font-size: 24px;
+}
+.card h4 {
+  position: absolute;
+  margin-top: 18%;
+  left: 36%;
+  font-size: 14px;
+  color: #fff;
+}
+
+.button-apartment {
+  position: absolute;
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  font-weight: 400;
+  background-color: rgb(240, 150, 1);
+  cursor: pointer;
+  color: #fff;
+  visibility:  hidden;
+  top: 100px;
+  left: 25%;
+}
+ .card:hover {
+  height: 50%;
+  width: 100%;
+  opacity: 1;
+ }
+
+.card:hover .button-apartment{ 
+  opacity: 1;
+  visibility: visible;
+  
+}
+/*finished Section1 */
+h1 {
+  color: black;
+  font-size: 40px;
+  padding-left: 42%;
+  margin: 17px 0 17px 0;
+
+}
+.divider {
+  border: 1px solid orange;
+  width: 5%;
+}
+  .sales-card {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card-box {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+  }
+
+   .card-box a {
+     color: #ffA200;
+     font-size: 22px;
+    font-weight: 700;
+    padding-top: 15px;
+   }
+  .card-box h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 10px 0 18px;
+  }
+
+  .list-style  {
+    color: #9b9b9b;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: disc;
+  }
+  
+  .list-style :first-child {
+    list-style-type: none;
+    
+  }
+
+  .list-style p {
+    font-size: 16px;
+    color: #434345;
+  }
+
+
+  .PROPERTYS {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .Resources-Tools {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: url(../images/resourse.jpg);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .real-estate-col {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;
+    
+
+  }
+   .real-estate-col h6 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4%;
+   }
+
+  .icons {
+    width: 80%;
+    display: flex;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+  
+  }
+  .icon {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 15px;
+    margin-left: 15px;
+  
+  }
+  .card-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #ffA200;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .more-detals {
+    margin-top: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 7px;
+   
+  }
+  .more-detals h5 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0 19px;
+  }
+
+  .more-detals p {
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  /*finished section2 */
+
+.section3 {
+  width: 100%;
+  height: 700px;
+  margin-bottom: 100px;
+
+}
+
+
+.agents-col {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+
+.card-agents {
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.agents-contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.name-surname {
+  font-size: 20px;
+  color: #ffA200;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*responsive */
+
+
+  
+@media screen and (max-width: 650px) {
+  header {
+    width: 100%;
+    height: 59px;
+    margin: 0 auto;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 20px 30px 50px 0px rgba(0,0,0,0.99);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.50);
+}
+  .logo {
+    display: block;
+    width: 100%;
+  }
+    .menuIcon {
+        position: absolute;
+       display:block;
+       left:5px;
+       top:10;
+    }
+    .fa {
+      font-size: 30px !important;
+    }
+    .myMenu {
+        position: fixed;
+        left: -50%;
+        top: 5.5%;
+        width: 50%;
+        background: white;
+        z-index: 0;
+        height: 100vh;
+        opacity: 0;
+    }
+  
+    .myMenu.smallSize {
+        position: fixed;
+        display: block;
+        left: 0%;
+        width: 50%;
+        height: 100%;
+        opacity: 1;
+        z-index: 1 ;
+        transition: 0.5s;
+        transition-timing-function: ease-in linear;
+    }
+
+    .myMenu.smallSize ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 5%;
+        z-index: -100;
+    }
+    .passive::after {
+      background: none;
+    }
+
+    .navbar li {
+      line-height: 3em;
+    }
+
+    .navbar li:hover {
+      background-color: #000;
+      line-height: 2em;
+    }
+    .navbar ul li a:hover {
+      color: #fff;
+      
+    }
+
+
+  .active1 {
+    background-color: black;
+    border-bottom: none;
+  }
+
+    
+    .active1 a {
+      color: #fff !important; 
+
+      
+    }
+    .s-1, .s-2{
+      width: 100%;
+      height: auto;
+      margin-bottom: 7%;
+    }
+    .carousel-caption {
+      display: block !important; 
+      position: absolute;
+      top: 15%;
+   
+      
+    }
+  .icons {
+    display: block;
+  }
+    .tab {
+      width: 10%;
+      display: flex;
+      flex-direction: row;
+    }
+   .carousel-caption h5 {
+    font-size: 36px;
+    color: #ffffff;
+   
+   }
+    .slider-btn {
+      display: none;
+    }
+
+  
+     .box {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    .text-poto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 70%;
+      margin: 0 auto;
+      height: 350px;
+      margin-bottom: 4%;
+    }
+    
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background-color: #434345;
+        bottom: 0;
+        transition: none;
+      
+    }
+    .card:hover {
+        height: auto;
+        width: 100%;
+    }
+    .text-poto h3 {
+      position: absolute;
+      color: #ffff;
+      font-size: 24px;
+      text-align: center;
+  }
+
+    .text-poto h4 {
+      display: none;
+    }
+    
+    .button-apartment {
+      display: block;
+      position: absolute;
+      font-size: 20px;
+      margin: 0 auto;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 10px;
+      font-weight: 400;
+      background-color: rgb(240, 150, 1);
+      cursor: pointer;
+      color: #fff;
+      visibility:visible;
+        top: 55%;
+      left: 15%;
+    }
+    .Resources-Tools {
+      height: 85vh;
+      background-size: fill;
+      background-repeat: no-repeat;
+      overflow: visible;
+    }
+
+   .real-estate-col {
+    width: 75%;
+    margin:0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .real-estate-col h6 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 17px;
+}
+   
+    .icon {
+      width: 100%;
+    }
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin: 10 0 17px 0;
+      color:#434345;
+      padding-left: 8%;
+    }
+   .sales-card {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+   }
+
+   .card-box {
+    width: 60%;
+     margin: 0 auto;
+     text-align: center;
+   }
+  
+   .list-style {
+    width: 90%;
+    color: #9b9b9b;
+    display: flex;
+    width: 90%;
+    list-style-type: disc;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 4%;
+}
+  
+   /*section3*/
+    .agents-col {
+      display: block;
+      
+    }
+    .agents-contact {
+      width: 270px;
+      display: flex;
+    }
+
+    /*section3 */
+}
+  
